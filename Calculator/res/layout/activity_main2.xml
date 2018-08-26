@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.litesav.myapplication.com.example.litesav.Calculator.SettingNotation">
+
+    <RelativeLayout
+        android:layout_width="441dp"
+        android:layout_height="611dp"
+        android:background="@android:color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="116dp"
+            android:text="Основание системы счисления"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="208dp"
+            android:background="#ffffff"
+            android:clipChildren="false"
+            android:persistentDrawingCache="animation"
+            android:spinnerMode="dialog"
+            tools:targetApi="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="76dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onClick"
+            android:text="Ок"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
